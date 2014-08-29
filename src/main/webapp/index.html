@@ -3,13 +3,13 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>dweather-1</title>
+	<title>weather information</title>
 	<link rel="stylesheet" href="css/weather.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div id="weatherObservationModule"></div>
+    <div id="weather-widget"></div>
     <br/>
     <div>
         <span>Choose your city:</span>
@@ -25,7 +25,7 @@
         <button id="choose-city">choose</button>
     </div>
 
-    <script type="text/template" id="weatherObservationModuleTemplate">
+    <script type="text/template" id="weather-module-template">
         <div class="show-temperature-container">
             <div class="show-temperature-header">
                 <div class="show-temperature-location"> <%= name %> weather </div>
@@ -33,18 +33,18 @@
             </div>
             <div class="show-temperature-body">
                 <div>
-                    <img src="http://openweathermap.org/img/w/<%= weather[0].icon %>.png" alt="<%= weather[0].main %>">
+                    <img src="http://openweathermap.org/img/w/<%= icon %>.png" alt="<%= main %>">
                 </div>
                 <div>
-                    <div class="show-temperature-temperature"> <%= fahrenheit %>&deg;F </div>
-                    <div class="show-temperature-main"> <%= weather[0].main %> </div>
-                    <div class="show-temperature-description"> <%= weather[0].description %> </div>
+                    <div class="show-temperature-temperature"> <%= temperature %>&deg;F </div>
+                    <div class="show-temperature-main"> <%= main %> </div>
+                    <div class="show-temperature-description"> <%= description %> </div>
                 </div>
                 <div class="show-temperature-extra">
-                    <div> Min: <%= tempmin %>&deg;F </div>
-                    <div> Max: <%= tempmax %>&deg;F  </div>
-                    <div> Pressure: <%= main.pressure %> </div>
-                    <div> Humidity: <%= main.humidity %> </div>
+                    <div> Min: <%= min %>&deg;F </div>
+                    <div> Max: <%= max %>&deg;F  </div>
+                    <div> Pressure: <%= pressure %> hPa </div>
+                    <div> Humidity: <%= humidity %> % </div>
                 </div>
             </div>
             <div class="show-temperature-clear"></div>

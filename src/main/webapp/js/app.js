@@ -1,6 +1,4 @@
 //TODO:
-//-change variable names, not from example
-//-take out commented out code
 //-perhaps style better
 //-take out extra testing locations
 //-perhaps color padding is better
@@ -15,9 +13,9 @@
     });
 
     var myWeatherView = new WeatherView({
-        el: '#weatherObservationModule',
+        el: '#weather-widget',
         model: myWeatherModel,
-        tmpl: '#weatherObservationModuleTemplate'
+        tmpl: '#weather-module-template'
     });
 
     //$( "#city-chosen" ).change(function() {
@@ -30,9 +28,9 @@
         });
 
         myWeatherView = new WeatherView({
-            el: '#weatherObservationModule',
+            el: '#weather-widget',
             model: myWeatherModel,
-            tmpl: '#weatherObservationModuleTemplate'
+            tmpl: '#weather-module-template'
         });
     });
 
