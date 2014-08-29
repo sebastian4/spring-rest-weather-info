@@ -6,7 +6,8 @@ The project has a rest service that uses spring rest and jackson as a json to ja
 The project uses maven, spring, jackson, log4j, junit for testing a few functionality.
 The browser gets the information from the local server and the server gets the live data information 
 from the openweathermap public weather service. The server cleans the data to a format that will
-be easier to work by the client, the browser.
+be easier to work by the client, the browser. I wanted to add hibernate to show examples of usage 
+but was not sure how an orm library would be utilized.
 
 To use the project from the browser on development, the url is:
 
@@ -22,6 +23,8 @@ Development
 
 - clone or download the git project and import the maven project on eclipse.
 - should work on netbeans too, but has not been tested with this ide.
+- to run on development, a local tomcat should be setup on eclipse and right click on the project.
+and click run on server, and select the tomcat server.
 - to package the project use mvn package on eclipse, will generate a war file. 
 note: when running mvn package, all tests have to pass, so the dev server should be running
 because one test tests the dev rest server. Or the RestWeatherInfoTest unit test can be deleted.
