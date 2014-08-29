@@ -10,7 +10,7 @@ import com.cyberiq.weatherinfo.model.CityWeatherInfo;
 
 public class RestWeatherInfoTest {
 
-	private static final String baseUrl = "http://localhost:8080/spring-rest-jour-two/rest";
+	private static final String baseUrl = "http://localhost:8080/weather-info/rest";
 	private static RestTemplate restTemplate = null;
 	
 	@BeforeClass
