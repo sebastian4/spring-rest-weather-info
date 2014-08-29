@@ -1,7 +1,7 @@
 spring-rest-weather-info
 ========================
 
-This project show the temperature and a few other weather statistics of a group of selected cities.
+This project shows the temperature and a few other weather statistics of a group of selected cities.
 The project has a rest service that uses spring rest and jackson as a json to java library.
 The project uses maven, spring, jackson, log4j, junit for testing a few functionality.
 The browser gets the information from the local server and the server gets the live data information 
@@ -9,9 +9,11 @@ from the openweathermap public weather service. The server cleans the data to a 
 be easier to work by the client, the browser.
 
 To use the project from the browser on development, the url is:
+
 	http://localhost:8080/weather-info/
 
 To see the rest service, here are some examples:
+
 	http://localhost:8080/weather-info/rest/city/Baltimore,md
 	http://localhost:8080/weather-info/rest/city/Orlando,fl
 
