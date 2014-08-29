@@ -22,7 +22,9 @@ Development
 
 - clone or download the git project and import the maven project on eclipse.
 - should work on netbeans too, but has not been tested with this ide.
-- to package the project use mvn package on eclipse, will generate a war file.
+- to package the project use mvn package on eclipse, will generate a war file. 
+note: when running mvn package, all tests have to pass, so the dev server should be running
+because one test tests the dev rest server. Or the RestWeatherInfoTest unit test can be deleted.
 - war file can be installed on a servlet container like tomcat or jboss, tested on tomcat.
 
 openweathermap rest api
