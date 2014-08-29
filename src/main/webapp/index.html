@@ -1,10 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<title>spring-rest-jour-two</title>
+	<meta charset="UTF-8">
+	<title>dweather-1</title>
+	<link rel="stylesheet" href="css/weather.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-<p>spring-rest-jour-two, yay ..</p>
+    <div id="weatherObservationModule"></div>
+    <br/>
+    <div>
+        <span>Choose your city:</span>
+        <select id="city-chosen">
+            <option value="Baltimore,md">Baltimore, md</option>
+            <option value="Atlanta,ga">Atlanta, ga</option>
+            <option value="Orlando,fl">Orlando, fl</option>
+            <option value="Seattle,wa">Seattle, wa</option>
+            <option value="Houston,tx">Houston, tx</option>
+            <option value="Cancun,mx">Cancun, mx</option>
+            <option value="Stockholm,se">Stockholm, se</option>
+        </select>
+        <button id="choose-city">choose</button>
+    </div>
+
+    <script type="text/template" id="weatherObservationModuleTemplate">
+        <div class="show-temperature-container">
+            <div class="show-temperature-header">
+                <div class="show-temperature-location"> <%= name %> weather </div>
+                <div class="show-temperature-date" style="background-color: <%= tempcolor %>"> <%= date %> </div>
+            </div>
+            <div class="show-temperature-body">
+                <div>
+                    <img src="http://openweathermap.org/img/w/<%= weather[0].icon %>.png" alt="<%= weather[0].main %>">
+                </div>
+                <div>
+                    <div class="show-temperature-temperature"> <%= fahrenheit %>&deg;F </div>
+                    <div class="show-temperature-main"> <%= weather[0].main %> </div>
+                    <div class="show-temperature-description"> <%= weather[0].description %> </div>
+                </div>
+                <div class="show-temperature-extra">
+                    <div> Min: <%= tempmin %>&deg;F </div>
+                    <div> Max: <%= tempmax %>&deg;F  </div>
+                    <div> Pressure: <%= main.pressure %> </div>
+                    <div> Humidity: <%= main.humidity %> </div>
+                </div>
+            </div>
+            <div class="show-temperature-clear"></div>
+        </div>
+    </script>
+
+    <script src="http://www.weather.com/blog/samples/jquery-1.7.1.min.js"></script>
+    <script src="http://www.weather.com/blog/samples/underscore-min.js"></script>
+    <script src="http://www.weather.com/blog/samples/backbone-min.js"></script>
+    <script src="js/models/weather.js"></script>
+    <script src="js/views/weatherview.js"></script>
+	<script src="js/app.js"></script>
 </body>
+
 </html>
