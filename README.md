@@ -11,12 +11,12 @@ but was not sure how an orm library would be utilized.
 
 To use the project from the browser on development, the url is:
 
-	http://localhost:8080/weather-info/
+- http://localhost:8080/weather-info/
 
 To see the rest service, here are some examples:
 
-	http://localhost:8080/weather-info/rest/city/Baltimore,md
-	http://localhost:8080/weather-info/rest/city/Orlando,fl
+- http://localhost:8080/weather-info/rest/city/Baltimore,md
+- http://localhost:8080/weather-info/rest/city/Orlando,fl
 
 Development
 -----------
@@ -36,5 +36,5 @@ because one test tests the dev rest server. Or the RestWeatherInfoTest unit test
 openweathermap rest api
 -----------------------
 
-http://api.openweathermap.org/data/2.5/weather?q=Baltimore,md
-http://openweathermap.org/weather-data#current
+- http://api.openweathermap.org/data/2.5/weather?q=Baltimore,md
+- http://openweathermap.org/weather-data#current
