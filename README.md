@@ -30,7 +30,7 @@ and click run on server, and select the tomcat server.
 - to test on the browser go to the urls previously shown.
 - to package the project use mvn package on eclipse, will generate a war file. 
 note: when running mvn package, all tests have to pass, so the dev server should be running
-because one test tests the dev rest server. Or the RestWeatherInfoTest unit test can be deleted.
+because one test tests the dev rest server. Or run mvn package with the flag -Dmaven.test.skip=true. Or the RestWeatherInfoTest unit test can be deleted.
 - war file can be installed on a servlet container like tomcat or jboss, tested on tomcat.
 
 openweathermap rest api
