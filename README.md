@@ -36,5 +36,5 @@ because one test tests the dev rest server. Or the RestWeatherInfoTest unit test
 openweathermap rest api
 -----------------------
 
-	http://api.openweathermap.org/data/2.5/weather?q=Baltimore,md
-	http://openweathermap.org/weather-data#current
+[http://api.openweathermap.org/data/2.5/weather?q=Baltimore,md]
+[http://openweathermap.org/weather-data#current]
